@@ -1,3 +1,28 @@
+/*
+    Created: 
+        Sumit Narwani   16/10/2020
+
+ */
+
+export { ChatHandler, chat_names };
+
+const chat_names = [
+  "Sumit Narwani",
+  "Shweta Tiwari",
+  "Ananya Singh",
+  "Prateek Narang",
+  "Samriddhi Shrivastav",
+  "Shivam Singh",
+  "Shriya Chabra"
+];
+const chat_names_length = chat_names.length;
+const chat_msg = [
+  "Why didn't he come and talk to me himse...",
+  "Perfect, I am really glad to hear that!...",
+  "This is what I understand you're telling me..",
+  "I'm sorry, I don't have the info on that..",
+];
+
 class ChatHandler {
   constructor(chat_template, chat_list) {
     this.hashmap = new Map();
@@ -61,6 +86,30 @@ class ChatHandler {
       // If node present in the linked list
       node = this.getNodeFromList(id);
     }
+
+    if (this.linked_list === null) {
+      // Setting head of empty list
+      this.linked_list = node;
+    } else {
+      // Adding node to the HEAD of linked list
+      node["next"] = this.linked_list;
+      if (this.linked_list !== null) {
+        this.linked_list["prev"] = node;
+      }
+
+      // Updating the HEAD to point to newly added node
+      this.linked_list = node;
+    }
+    this.updateList();
+  }
+
+  deleteMsg(id) {
+    let node = this.getNodeFromList(id);
+
+    // No use of node since it has been deleted
+    // thus we cleared the entry of this id from the hashmap also
+    delete this.hashmap[id];
+    this.updateList();
   }
 
   getNodeFromList(id) {
@@ -86,6 +135,32 @@ class ChatHandler {
     return node;
   }
 
+  updateList() {
+    // Update the contents of the chat list
+    let innerHTML = "";
 
-  
+    // Reference for the Linked List
+    let head = this.linked_list;
+
+    // Iterator for the Linked List
+    while (head !== null) {
+      let element = head["chat_item"];
+
+      // If the node is HEAD (then setting special class for different formatting)
+      if (head === this.linked_list) {
+        element.className = "ks-item ks-active";
+
+        // Updating the Time
+        element.querySelector("#Time").innerText = this.getTime();
+      } else {
+        element.className = "ks-item";
+      }
+
+      innerHTML += element.outerHTML;
+
+      // Moving to the next node
+      head = head["next"];
+    }
+    this.chat_list.innerHTML = innerHTML;
+  }
 }
