@@ -8,7 +8,7 @@ export { ChatHandler, chat_names };
 
 const chat_names = [
   "Sumit Narwani",
-  "Shweta Tiwari",
+  "Shweta Tiwari",  
   "Ananya Singh",
   "Prateek Narang",
   "Samriddhi Shrivastav",
