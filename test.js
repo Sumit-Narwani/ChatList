@@ -11,7 +11,7 @@ const chat_names = [
   "Shweta Tiwari",  
   "Ananya Singh",
   "Prateek Narang",
-  "Samriddhi Shrivastav",
+  "Nikhil Hemrajani",
   "Shivam Singh",
   "Shriya Chabra"
 ];
