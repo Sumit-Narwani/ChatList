@@ -22,6 +22,9 @@ const chat_msg = [
   "This is what I understand you're telling me..",
   "I'm sorry, I don't have the info on that..",
 ];
+const chat_msg_length = chat_msg.length;
+const chat_img_length = 7;
+
 
 class ChatHandler {
   constructor(chat_template, chat_list) {
@@ -70,7 +73,7 @@ class ChatHandler {
 
     // console.log("./images/avatar" + eval(1 + (id%chat_img_length)) + ".png");
     chat_item.querySelector("#Image").src =
-      ".images/avatar" + eval(1 + (id % chat_img_length)) + ".png";
+      "./images/avatar" + eval(1 + (id % chat_img_length)) + ".png";
 
     node["chat_item"] = chat_item;
     return node;
