@@ -5,7 +5,7 @@
 
 
 
-*A Visualization of how a chat application manages the Chats.*
+*Visualization of how a chat application manages the Chats.*
 </br>
 </br>
 
@@ -21,7 +21,7 @@ The live demo can be found [here](https://snchatlist.herokuapp.com/).
 
 ![Image](./assets/demo1.gif)
 
-</br>
+</br>   
 
 ## Features
 ### Managing the new and deleted chats
