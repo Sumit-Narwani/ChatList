@@ -8,7 +8,8 @@
 *A Visualization of how a chat application manages the Chats.*
 </br>
 </br>
-<img src="./assets/demo.png" width="100%">
+
+![Image](./assets/demo.png) 
 
 </br>
 
@@ -17,8 +18,8 @@
 The live demo can be found [here](https://snchatlist.herokuapp.com/).
 
 
-<img src="./assets/demo1.gif" width="100%">
 
+![Image](./assets/demo1.gif)
 
 </br>
 
