@@ -9,7 +9,7 @@
 </br>
 </br>
 
-![Image](./assets/demo.png) 
+![Image](./Assets/demo.png) 
 
 </br>
 
@@ -19,7 +19,7 @@ The live demo can be found [here](https://snchatlist.herokuapp.com/).
 
 
 
-![Image](./assets/demo1.gif)
+![Image](./Assets/demo1.gif)
 
 </br>   
 
