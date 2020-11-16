@@ -19,7 +19,7 @@ The live demo can be found [here](https://snchatlist.herokuapp.com/).
 
 
 
-![Image](./Assets/demo1.gif)
+<img src = "./Assets/demo1.gif" width="100%">
 
 </br>   
 
